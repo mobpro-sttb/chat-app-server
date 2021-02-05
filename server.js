@@ -42,7 +42,8 @@ io.on('connection', socket => {
 
 app.use('/', require('./src/routes'));
 
-server.listen('80', () => {
-    console.log("Listening on port 80");
+let port = process.env.PORT || 3000;
+server.listen(port, () => {
+    console.log("Listening on port "+port);
     mongoDB.connect();
 });
