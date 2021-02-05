@@ -42,7 +42,7 @@ io.on('connection', socket => {
 
 app.use('/', require('./src/routes'));
 
-server.listen('8081', '192.168.43.188', () => {
+server.listen('8081', () => {
     console.log("Listening on port 8081");
     mongoDB.connect();
 });

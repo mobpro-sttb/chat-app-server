@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const mongoUser = process.env.MONGO_USER;
 const mongoPassword = process.env.MONGO_PASS;
 
-const mongoUrl = 'mongodb://localhost:27017/chat_app';
+const mongoUrl = 'mongodb+srv://mongoadmin:mongoadmin@cluster0.x7mbh.mongodb.net/chat_app?retryWrites=true&w=majority';
 
 module.exports = {
     
